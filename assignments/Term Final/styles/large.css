@@ -81,10 +81,7 @@
 */
     }
 
-    .tempGridInfo img {
-        max-width: 250px;
-        margin: 0 auto;
-    }
+   
 
     .tempGridInfo h4 {
         text-align: center
@@ -93,37 +90,56 @@
 
 }
 
-/*
 @media screen and (min-width: 1100px) {
+/*
     .cumcon {
         padding: 0 250px 0;
+    }
+*/
+    
+     .tempGridInfo img {
+        max-width: 1000px;
+/*        margin: 0 auto;*/
+    }
+    
+    .tempGridInfo {
+        display: flex;
+        flex-direction: column;
+        max-width: 1000px;
+        justify-content: center;
+        margin: 0 auto;
     }
 }
 
 @media screen and (min-width: 810px) {
 
+/*
     .cumcon,
     #reserveForm {
         padding: 0 150px 0;
     }
+*/
 }
 
 @media screen and (max-width: 800px) {
 
+/*
     .cumcon,
     #reserveForm {
         padding: 0 100px 0;
     }
+*/
 }
 
 @media screen and (max-width: 600px) {
 
+/*
     .cumcon,
     #reserveForm {
         padding: 0;
     }
-}
 */
+}
 
 @media screen and (max-width: 500px) {
     .logo {
