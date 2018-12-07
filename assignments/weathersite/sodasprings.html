@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A site SoleyFocused on the weather to make sure you are ready for the day.">
+    <title>Soda Springs, ID - SoleyWeather</title>
+     <link rel="icon" href="./images/sunnycloud.png">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville:700" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+    <header class="wrapperhead"><a href="index.html">
+            <img src="images/sunnycloud.png" alt="logo" class="img1"></a>
+        <div class="ht">
+            <h1>SoleyWeather</h1>
+            <div class="sh">
+                <h2>A Weather site that is on your side.</h2>
+            </div>
+        </div>
+        <div class="cc">
+            <img src="images/sunnycloud.png" alt="placeholder img for the weather icon" class="img2" id="weather_icon">
+            <p><span id="wCon"></span></p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <button class="hamburger" onclick="toggleHam()"><img src="images/Hamburger_icon.png" alt="hamburger icon"></button>
+        <ul class="main-nav" id="mainMenu">
+            <li><a href="index.html" class="link">Home</a></li>
+            <li><a href="preston.html" class="link">Preston</a></li>
+            <li><a href="sodasprings.html" class="link">Soda Springs</a></li>
+            <li><a href="fishhaven.html" class="link">Fish Haven</a></li>
+            <li><a href="stormcenter.html" class="link">Storm Center</a></li>
+            <li><a href="gallery.html" class="link">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 class="townname">Soda Springs, Idaho</h1>
+        <div class="m1">
+            <img src="images/prestonsmall.jpg" alt="srcset image" srcset="./images/prestonlarge.jpg 700w, ./images/prestonsmall.jpg 500w">
+            <div class="wd">
+                <h3>Weather Summary</h3>
+                <p class="label">Currently: <span id="wCon1"></span></p>
+                <p class="label">Temperature: <span id="currenttemp"></span></p>
+                <p class="label">Windchill: <span id="windchill"></span></p>
+                <p class="label">Humidity: <span id="humidity"></span></p>
+                <!--                <p class="label">Precipitation: <span id="precip">N/A</span></p>-->
+                <p class="label">Wind Speed: <span id="currentspeed"></span></p>
+            </div>
+
+        </div>
+
+        <div class="m2">
+            <section class="forecast">
+                <h3>High Temperature Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day:</th>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tues</th>
+                            <th>Weds</th>
+                            <th>Thurs</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Forecast:</th>
+                            <td><span id="sun"></span></td>
+                            <td><span id="mon"></span></td>
+                            <td><span id="tues"></span></td>
+                            <td><span id="wed"></span></td>
+                            <td><span id="thurs"></span></td>
+                            <td><span id="fri"></span></td>
+                            <td><span id="sat"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <div class="m3">
+            <article>
+                <p>Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                    the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                    1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+            </article>
+            <section class="artimg">
+                <img src="images/family.jpg" alt="placeholder">
+            </section>
+        </div>
+
+        <section class="gMap">
+            <figure>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202845.1150344878!2d-122.18118284891618!3d37.40272091844177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb68ad0cfc739%3A0x7eb356b66bd4b50e!2sSilicon+Valley%2C+CA!5e0!3m2!1sen!2sus!4v1541210691267" frameborder="0" style="border:0" allowfullscreen class="iframeMap"></iframe>
+            </figure>
+
+             <article class="ci">
+                <div class="spacing">
+                    <p class="cintro">Welcome!</p>
+                    <p>This is SoleyWeather where WE focus <br>
+                        on making YOUR day PREDICTABLE! </p>
+
+                    <p>YOU can be like US and help others by</p>
+                    <p>reporting your local weather
+                        <a href="stormcenter.html">here.</a> :)</p>
+                </div>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p> &copy; SoleyWeather | Silicon Valley, CA | <span id="currentDate">test</span> </p>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/weatherss.js"></script>
+    <script src="http://code.jquery.com/jquery-1.5.js"></script>
+    <script src="scripts/wayfinding.js"></script>
+
+</body>
+
+</html>

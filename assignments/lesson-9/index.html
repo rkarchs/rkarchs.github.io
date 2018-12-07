@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A site SoleyFocused on the weather to make sure you are ready for the day.">
+    <title>Home - SoleyWeather</title>
+    <link rel="icon" href="./images/sunnycloud.png">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville:700" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small-9.css">
+    <link rel="stylesheet" href="styles/large-9.css">
+</head>
+
+<body>
+    <header class="wrapperhead"> <a href="index.html">
+            <img src="images/sunnycloud.png" alt="logo" class="img1"></a>
+        <div class="ht">
+            <h1>SoleyWeather</h1>
+            <div class="sh">
+                <h2>A Weather site that is on your side.</h2>
+            </div>
+        </div>
+
+    </header>
+
+    <nav class="navbar">
+        <button class="hamburger" onclick="toggleHam()"><img src="images/Hamburger_icon.png" alt="hamburger icon"></button>
+        <ul class="main-nav" id="mainMenu">
+            <li><a href="index.html" class="link">Home</a></li>
+            <li><a href="preston-9.html" class="link">Preston</a></li>
+            <li><a href="#" class="link">Soda Springs</a></li>
+            <li><a href="#" class="link">Fish Haven</a></li>
+            <li><a href="stormcenter.html" class="link">Storm Center</a></li>
+            <li><a href="gallery.html" class="link">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="grid-container">
+
+            <div class="item1">
+                <section class="preston">
+                    <figure>
+                       <a href="preston-9.html"><img src="images/Napoleon-Dynamite.jpg" alt="placeholder" class="prestonImg">
+                        <figcaption class="motto">Motto: <span id="pm"></span></figcaption></a>
+                    </figure>
+
+                    <article class="cib">
+                        <h2 id="Preston"></h2>
+                        <p>Avg. Rainfall: <span id="prf"></span> in</p>
+                        <p>Population: <span id="ppop"></span> </p>
+                        <p>Year Founded: <span id="pyear"></span></p>
+                        <p class="eve">Events:</p>
+                        <ol>
+                            <li><span id="pe1"></span></li>
+                            <li><span id="pe2"></span></li>
+                            <li><span id="pe3"></span></li>
+                        </ol>
+                    </article>
+                </section>
+            </div>
+
+
+            <div class="item2">
+                <section class="sodaSprings">
+                    <figure>
+                        <img src="images/SS.jpg" alt="placeholder" class="sodaSpringsImg">
+                        <figcaption class="motto">Motto: <span id="ssm"></span></figcaption>
+                    </figure>
+
+                    <article class="cib">
+                        <h2 id="sodaSprings"></h2>
+                        <p>Avg. Rainfall: <span id="ssrf"></span> in</p>
+                        <p>Population: <span id="sspop"></span> </p>
+                        <p>Year Founded: <span id="ssyear"></span></p>
+                        <p class="eve">Events:</p>
+                        <ol>
+                            <li><span id="sse1"></span></li>
+                            <li><span id="sse2"></span></li>
+                            <li><span id="sse3"></span></li>
+                        </ol>
+                    </article>
+                </section>
+            </div>
+
+            <div class="item3">
+                <section class="fishHaven">
+                    <figure>
+                        <img src="images/BL.jpg" alt="placeholder" class="fishHavensImg">
+                        <figcaption class="motto">Motto: <span id="fhm"></span></figcaption>
+                    </figure>
+
+                    <article class="cib">
+                        <h2 id="fishHaven"></h2>
+                        <p>Avg. Rainfall: <span id="fhrf"></span> in</p>
+                        <p>Population: <span id="fhpop"></span> </p>
+                        <p>Year Founded: <span id="fhyear"></span></p>
+                        <p class="eve">Events:</p>
+                        <ol>
+                            <li><span id="fhe1"></span></li>
+                            <li><span id="fhe2"></span></li>
+                            <li><span id="fhe3"></span></li>
+                        </ol>
+                    </article>
+                </section>
+            </div>
+        </div>
+
+        <section class="gMap">
+            <figure>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202845.1150344878!2d-122.18118284891618!3d37.40272091844177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb68ad0cfc739%3A0x7eb356b66bd4b50e!2sSilicon+Valley%2C+CA!5e0!3m2!1sen!2sus!4v1541210691267" frameborder="0" style="border:0" allowfullscreen class="iframeMap"></iframe>
+            </figure>
+
+            <article class="ci">
+                <div class="spacing">
+                    <p class="cintro">Welcome!</p>
+                    <p>This is SoleyWeather where WE focus <br>
+                        on making YOUR day PREDICTABLE! </p>
+
+                    <p>YOU can be like US and help others by</p>
+                    <p>reporting your local weather
+                        <a href="stormcenter.html">here.</a> :)</p>
+                </div>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p> &copy; SoleyWeather | <a href="https://openweathermap.org/">Openweather</a> | <span id="currentDate">test</span> </p>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+</html>

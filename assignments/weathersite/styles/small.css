@@ -1,0 +1,483 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #6b7a8f;
+    font-family: "Lato", sans-serif;
+
+}
+
+.siteContent {
+    display: flex;
+    min-height: 77vh;
+    flex-direction: column;
+    flex: 1;
+}
+
+.wrapperhead {
+    background-color: powderblue;
+    display: flex;
+    justify-content: center;
+}
+header a:hover {
+    border-bottom: none;
+    padding: 0px;
+}
+.img1,
+.img2 {
+    max-width: 50px;
+    height: 50px;
+    margin: 0 auto;
+
+}
+
+.img1 {}
+
+.ht h1 {
+    display: flex;
+    justify-content: center;
+    font-family: "Libre Baskerville", serif;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.sh h2 {
+    font-size: 13px;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+.cc {
+    border: 1px solid black;
+    margin: 10px;
+    display: none;
+}
+
+.cc p {
+    text-align: center;
+}
+
+#wCon {
+    font-family: "Lato", sans-serif;
+    padding: 5px
+}
+
+nav {
+    background-color: powderblue;
+}
+
+.navbar {
+    font-size: 18px;
+}
+
+/* Style the active class (and buttons on mouse-over) */
+.hamburger {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: powderblue;
+    border-color: powderblue;
+}
+
+.hamburger img {
+    max-width: 6%;
+    background-color: powderblue;
+}
+
+.logo {
+    text-decoration: none;
+    color: black;
+}
+
+.main-nav {
+    list-style: none;
+    padding-left: 0;
+}
+
+.main-nav > li {
+    display: none;
+
+}
+
+.main-nav li {
+    display: none;
+}
+
+.main-nav.responsive li {
+    background-color: powderblue;
+    display: flex;
+    justify-content: center;
+    margin: 2px 0;
+}
+
+.main-nav.responsive li a {
+    padding: 1rem;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+.main-nav.responsive li a:hover {
+    background-color: #6b7a8f;
+}
+
+.takeMeHome {
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+
+}
+
+.takeMeHome a {
+    text-decoration: none;
+}
+
+ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+a:link {
+    color: black;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    border-bottom: dashed 2px;
+    padding: 3px;
+    color: green;
+}
+
+.active {
+    border-bottom: solid 2px;
+    padding: 3px;
+}
+
+/* selected link */
+.townname {
+    text-align: center;
+    font-family: "Libre Baskerville", serif;
+    background-color: powderblue;
+    font-size: 20px;
+    margin-top: -10px;
+    padding: 10px;
+}
+
+.tu {
+    text-align: center;
+    color: white;
+}
+
+.thumbsUp {
+    max-width: 50%;
+    margin: 0 auto
+}
+
+.m1 {
+    position: relative;
+    margin-bottom: 10px
+}
+
+.m1 img {
+    max-width: 100%;
+}
+
+.wd {
+    z-index: 100;
+    position: absolute;
+    color: white;
+    left: 0px;
+    top: 60px;
+    padding: 10px;
+    font-size: 20px;
+    background: radial-gradient(ellipse at center, rgba(25, 137, 0, 0.7) 0%, rgba(25, 137, 0, 0.66) 25%, rgba(25, 137, 0, 0.55) 100%);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: .25rem;
+
+}
+
+.wd h3 {
+    border-bottom-style: solid;
+    border-bottom-color: white;
+}
+
+.wd p {}
+
+.label span {
+    color: yellow;
+}
+
+.m2 {
+    display: none;
+}
+
+.m2 section {
+    background-color: powderblue;
+}
+
+.forecast h3 {
+    text-align: center;
+    font-family: "Libre Baskerville", serif;
+    font-size: 20px;
+}
+
+table {
+    margin: 0 auto;
+    line-height: 20px;
+    border-spacing: 10px;
+}
+
+th {
+    text-decoration: underline;
+}
+
+.m3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin-top: 10px;
+    background-color: powderblue;
+}
+
+.m3 article {
+    max-width: 550px;
+}
+
+.m3 article p {
+    line-height: 25px;
+    margin: 20px;
+}
+
+.artimg img {
+    max-width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.m4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin-top: 15px;
+    background-color: powderblue;
+}
+
+.m4 section {
+    max-width: 350px;
+}
+
+.m4 section p {
+    line-height: 25px;
+    margin: 20px;
+}
+
+/*
+.map iframe {
+    max-width: 250px;
+    height: 150px;
+    margin-top: 20px;
+}
+*/
+
+footer {
+    text-align: center;
+    background-color: powderblue;
+
+}
+
+footer p {
+    padding: 10px
+}
+
+/*css for gallery*/
+
+.picContainer {
+    display: grid;
+    grid-column-gap: .25rem;
+    background-color: powderblue;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 10px;
+}
+
+.item {
+    padding: 5px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+figure:hover {
+    opacity: 0.6;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6), 0 0 40px rgba(255, 255, 255, 0.6) inset;
+}
+
+.galleryFig {
+    text-align: center;
+    color: black;
+    border-radius: 5px;
+}
+
+.galBg {
+    margin-top: 25px;
+    background-color: powderblue;
+}
+
+/*Form - CSS*/
+form {
+    font-family: "Lato", sans-serif;
+    /*    background-color: powderblue;*/
+    padding: 10px;
+}
+
+.ll {
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    background-color: powderblue;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.si {
+    background-color: powderblue;
+}
+
+.ai {
+    background-color: powderblue;
+}
+
+.rf {
+    text-align: center;
+    color: black;
+    font-weight: 300;
+}
+
+fieldset {
+    margin: 2rem 0;
+    border: 1px solid powderblue;
+    border-radius: 10px;
+    color: black;
+    font-size: 18px;
+}
+
+form input[type=text],
+input[type=email],
+input[type=tel],
+input[type=number],
+input[type=date],
+input[list=browsers] {
+    height: 35px;
+    width: 50%%;
+    border-radius: .5rem;
+    padding: 10px;
+}
+
+input:required {
+    border-left: red solid 6px;
+}
+
+input:required:valid {
+    border-left: green solid 6px;
+}
+
+.submitBtn {
+    border: powderblue solid 3px;
+    background-color: powderblue;
+    color: black;
+    border-radius: 1rem;
+    padding: 5px 15px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    width: 20%;
+}
+
+@media only screen and (max-width: 400px) {
+    textarea {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .submitBtn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
+
+/*CSS for home page*/
+.motto {
+    color: black;
+    margin-bottom: 10px;
+    font-size: 13px;
+    text-align: center;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+.preston,
+.sodaSprings,
+.fishHaven,
+.gMap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px auto;
+    background-color: powderblue;
+    padding: 10px;
+}
+
+.prestonImg,
+.sodaSpringsImg,
+.fishHavensImg,
+.iframeMap {
+    max-width: 300px;
+    margin: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+#Preston,
+#sodaSprings,
+#fishHaven {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.cib {
+    text-align: center;
+}
+
+.preston article,
+.sodaSprings article,
+.fishHaven article,
+.gMap article {
+    line-height: 25px;
+    margin: 10px;
+
+}
+
+.eve {
+    text-decoration: underline;
+    font-weight: bold;
+}
+.spacing {
+    text-align: center;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A site SoleyFocused on the weather to make sure you are ready for the day.">
+    <title>Storm Center - SoleyWeather</title>
+     <link rel="icon" href="./images/sunnycloud.png">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville:700" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small-9.css">
+    <link rel="stylesheet" href="styles/large-9.css">
+</head>
+
+<body>
+    <header class="wrapperhead"><a href="index.html">
+            <img src="images/sunnycloud.png" alt="logo" class="img1"></a>
+        <div class="ht">
+            <h1>SoleyWeather</h1>
+            <div class="sh">
+                <h2>A Weather site that is on your side.</h2>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <button class="hamburger" onclick="toggleHam()"><img src="images/Hamburger_icon.png" alt="hamburger icon"></button>
+         <ul class="main-nav" id="mainMenu">
+            <li><a href="index.html" class="link">Home</a></li>
+            <li><a href="preston-9.html" class="link">Preston</a></li>
+            <li><a href="#" class="link">Soda Springs</a></li>
+            <li><a href="#" class="link">Fish Haven</a></li>
+            <li><a href="stormcenter.html" class="link">Storm Center</a></li>
+            <li><a href="gallery.html" class="link">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1 class="townname">Storm Center</h1>
+
+        <form method="get" action="thanks.html">
+
+            <fieldset class="si">
+                <legend class="ll">Help Others. Report Your Local Weather!</legend>
+                <h4 class="rf">*indicates required field.</h4>
+                *First name:
+                <br>
+                <input type="text" name="firstname" pattern="[A-Za-z ]{5,}" title="firstname" required>
+                <br><br>
+                *Last name:
+                <br>
+                <input type="text" name="lastname" pattern="[A-Za-z ]{5,}" required>
+                <br><br>
+                Email:
+                <br>
+                <input type="email" name="email" placeholder="example@email.com">
+                <br><br>
+                *Telephone Number:
+                <br>
+                <input type="tel" name="telephone" pattern="[0-9]{10,}" required>
+                <br><br>
+                *Zip Code:
+                <br>
+                <input type="number" name="zipCode" pattern="[0-9]{5,}" required>
+                <br>
+            </fieldset>
+
+            <fieldset class="si">
+                <legend class="ll">Storm information</legend>
+                <br>
+                Storm Date:
+                <br>
+                <input type="date" name="stormDate">
+                <br><br>
+                Storm Type:
+                <br>
+                <input list="browsers" name="stormType" placeholder="Please Select One...">
+                <datalist id="browsers">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+                <br><br>
+                Storm Severity: <span id="ratingvalue">5</span>
+                <br>
+                <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <br><br>
+                Storm Region:
+                <br>
+                <select name="stormRegion">
+                    <option value="">Select Region ...</option>
+                    <option value="region">Preston</option>
+                    <option value="region">Soda Springs</option>
+                    <option value="region">Fish Haven</option>
+                </select>
+                <br><br>
+                Are conditions dangerous?
+                <br><br>
+                <div>
+                    <input type="radio" name="inDanger" value="yes" class="radio"> Yes
+                </div>
+                <div>
+                    <input type="radio" name="inDanger" value="maybe" class="radio"> Maybe
+                </div>
+                <div>
+                    <input type="radio" name="inDanger" value="no" class="radio">No
+                </div>
+                <br><br>
+            </fieldset>
+
+            <fieldset class="ai">
+                <legend class="ll">Additional Information Or Comments</legend>
+                <textarea id="textField" name="textArea" rows="5" cols="35" maxlength="200" wrap="hard" onkeyup="countChar(this)"></textarea>
+                <div id="charNum">200/200</div>
+            </fieldset>
+            <input type="submit" value="Submit" class="submitBtn">
+        </form>
+
+    </main>
+    <footer>
+        <p> &copy; SoleyWeather | Silicon Valley, CA | <span id="currentDate">test</span> </p>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="http://code.jquery.com/jquery-1.5.js"></script>
+    <script src="scripts/range.js"></script>
+    <script src="scripts/charCount.js"></script>
+    <script src="http://code.jquery.com/jquery-1.5.js"></script>
+    <script src="scripts/wayfinding.js"></script>
+</body>
+
+</html>

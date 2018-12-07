@@ -1,0 +1,282 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #6b7a8f;
+	font-family: "Lato", sans-serif;
+
+}
+
+.wrapperhead {
+	background-color: powderblue;
+	display: flex;
+	justify-content: center;
+}
+
+.img1,
+.img2 {
+	max-width: 50px;
+	height: 50px;
+
+}
+
+.img1 {}
+
+.ht h1 {
+	display: flex;
+	justify-content: center;
+	font-family: "Libre Baskerville", serif;
+	font-size: 30px;
+	margin-top: 20px;
+}
+
+.sh h2 {
+	font-size: 13px;
+	text-align: center;
+	margin-top: -20px;
+	margin-bottom: 10px;
+}
+
+.cc {
+	border: 1px solid black;
+	margin: 10px;
+	display: none;
+}
+
+.cc p {
+	text-align: center;
+}
+
+nav {
+	background-color: powderblue;
+}
+
+.navbar {
+	font-size: 18px;
+}
+
+.hamburger {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: powderblue;
+	border-color: powderblue;
+}
+
+.hamburger img {
+	max-width: 6%;
+	background-color: powderblue;
+}
+
+.logo {
+	text-decoration: none;
+	color: black;
+}
+
+.main-nav {
+	list-style: none;
+	padding-left: 0;
+}
+
+.main-nav > li {
+	display: none;
+
+}
+
+.main-nav li {
+	display: none
+}
+
+.main-nav.responsive li {
+	background-color: powderblue;
+	display: flex;
+	justify-content: center;
+	margin: 2px 0;
+}
+
+.main-nav.responsive li a {
+	padding: 1rem;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+}
+
+.main-nav.responsive li a:hover {
+	background-color: #6b7a8f;
+}
+
+ul li a {
+	color: black;
+	text-decoration: none;
+}
+
+a:link {
+	color: black;
+}
+
+/* visited link */
+a:visited {
+	color: black;
+}
+
+/* mouse over link */
+a:hover {
+	color: white;
+}
+
+/* selected link */
+a:active {
+	color: orangered;
+}
+
+.townname {
+	text-align: center;
+	font-family: "Libre Baskerville", serif;
+	background-color: powderblue;
+	font-size: 20px;
+	margin-top: -10px;
+	padding: 10px;
+}
+
+.townname h1 {}
+
+.m1 {
+	position: relative;
+	margin-bottom: 10px
+}
+
+.m1 img {
+	max-width: 100%;
+}
+
+.wd {
+	z-index: 100;
+	position: absolute;
+	color: white;
+	left: 0px;
+	top: 60px;
+	padding: 10px;
+	font-size: 20px;
+	background: radial-gradient(ellipse at center, rgba(25, 137, 0, 0.7) 0%, rgba(25, 137, 0, 0.66) 25%, rgba(25, 137, 0, 0.55) 100%);
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-column-gap: .25rem;
+
+}
+
+.wd h3 {
+	border-bottom-style: solid;
+	border-bottom-color: white;
+}
+
+.wd p {}
+
+.label span {
+	color: yellow;
+}
+
+.m2 {
+	display: none;
+}
+
+.m2 section {
+	background-color: powderblue;
+}
+
+.forecast h3 {
+	text-align: center;
+	font-family: "Libre Baskerville", serif;
+	font-size: 20px;
+}
+
+table {
+	margin: 0 auto;
+	line-height: 20px;
+	border-spacing: 10px;
+}
+
+.m3 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-direction: column-reverse;
+	margin-top: 10px;
+	background-color: powderblue;
+}
+
+.m3 article {
+	max-width: 550px;
+}
+
+.m3 article p {
+	line-height: 25px;
+	margin: 20px;
+}
+
+.artimg img {
+	max-width: 250px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+.m4 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-direction: row-reverse;
+	margin-top: 15px;
+	background-color: powderblue;
+}
+
+.m4 section {
+	max-width: 550px;
+}
+
+.m4 section p {
+	line-height: 25px;
+	margin: 20px;
+}
+
+.map iframe {
+	max-width: 200px;
+	height: 150px;
+	margin-top: 20px;
+}
+
+footer {
+	text-align: center;
+	margin-top: -10px;
+	margin-bottom: 20px;
+	background-color: powderblue;
+}
+
+footer p {
+	padding: 10px
+}
+
+/*css for gallery*/
+
+.picContainer {
+	display: grid;
+	grid-column-gap: .25rem;
+	margin-bottom: 25px;
+}
+
+.item {
+	padding: 5px;
+	width: 100%;
+}
+
+figure:hover {
+    opacity: 0.6;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6), 0 0 40px rgba(255,255,255,0.6) inset;
+}
+figcaption {
+	text-align: center;
+	color: white;
+}

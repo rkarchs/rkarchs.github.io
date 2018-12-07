@@ -1,0 +1,346 @@
+@media only screen and (min-width: 600px) {
+    body {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .img1,
+    .img2 {
+        max-width: 80px;
+        height: 80px;
+    }
+
+    .ht h1 {
+        font-size: 50px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    .sh h2 {
+        font-size: 20px;
+        margin-top: -20px
+    }
+
+    .cc {
+        display: contents;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .cc p {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .navbar {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .main-nav {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+    }
+
+    .main-nav > li {
+        display: flex;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .responsive li {
+        flex: 1;
+        padding-bottom: 10px
+    }
+
+    .takeMeHome {
+        margin-left: 70px;
+        text-align: center;
+        padding: 10px;
+        font-size: 16px;
+
+    }
+
+    .townname {
+        font-size: 25px;
+        margin-top: -25px;
+    }
+
+    .m1 {
+        max-width: 1000px;
+    }
+
+    .wd {
+        padding: 10px;
+        position: absolute;
+        max-width: 100%;
+        color: #fff;
+        text-align: center;
+        top: 80px;
+        left: 5px;
+
+    }
+
+    .wd p {
+        line-height: 40px
+    }
+
+    .label {
+        line-height: 35px;
+    }
+
+    .m2 {
+        display: contents;
+    }
+
+    .forecast h3 {
+        padding-top: 20px;
+    }
+
+    table {
+        padding-bottom: 20px;
+    }
+
+    .m3 {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        max-width: 1000px;
+        margin: 15px auto;
+    }
+
+    .m3 article {}
+
+    .m3 article p {
+        line-height: 25px;
+        margin: 10px;
+    }
+
+    .artimg img {
+        max-width: 250px;
+        margin: 10px;
+    }
+
+    .m4 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        flex-direction: row;
+        margin: 10px auto;
+    }
+
+
+    .m4 section p {
+        line-height: 25px;
+        margin: 10px;
+    }
+
+    .map img {
+        max-width: 250px;
+        margin-top: 10px;
+    }
+
+    /*css for gallery*/
+    .picContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /*Form - CSS*/
+
+    .ll {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    fieldset {
+        font-size: 20px;
+    }
+
+    #rating {
+        width: 30%;
+    }
+
+    .submitBtn {
+        font-size: 20px;
+    }
+
+    /*CSS for Home/Index*/
+    /*
+    .preston,
+    .sodaSprings,
+    .fishHaven,
+*/
+
+    .item1,
+    .item2,
+    .item3 {
+        background-color: powderblue;
+    }
+
+    .gMap {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin: 15px auto;
+    }
+
+    #Preston,
+    #sodaSprings,
+    #fishHaven,
+    .cib {
+        text-align: center;
+    }
+
+    .spacing {
+        margin-top: 10px;
+        text-align: left;
+    }
+}
+
+
+@media only screen and (min-width: 780px) {
+    main {
+        margin-top: 25px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        background-color: powderblue;
+        /*        padding: 10px;*/
+    }
+
+    .grid-container > div {
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .item1 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    .item2 {
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+
+    .item3 {
+        grid-column-start: 3;
+        grid-column-end: 3;
+    }
+
+
+    .prestonImg,
+    .sodaSpringsImg,
+    .fishHavensImg,
+    .iframeMap {
+        max-width: 250px;
+
+    }
+
+    .cib {
+        font-size: 16px;
+
+    }
+
+    ol {
+        text-indent: inside;
+    }
+
+    .item1 article,
+    .item2 article,
+    .item3 article {
+        line-height: 25px;
+    }
+    
+     form {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .wd {
+        padding: 10px;
+        text-align: center;
+        top: 60px;
+        left: 5px;
+        font-size: 14px;
+    }
+
+    .wd p {
+        line-height: 30px;
+    }
+
+    .picContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .townname {
+        margin-top: 0px;
+    }
+
+    .main-nav {
+   
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .wd {
+        padding: 10px;
+        text-align: center;
+        top: 40px;
+        left: 5px;
+        font-size: 13px;
+    }
+
+    .wd p {
+        line-height: 25px
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .wd {
+        padding: 10px;
+        text-align: center;
+        top: 40px;
+        left: 5px;
+        font-size: 10px;
+    }
+
+    .wd p {
+        line-height: 20px
+    }
+
+    .picContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+   
+}
+
+@media only screen and (max-width: 405px) {
+    .wd {
+        padding: 10px;
+        text-align: center;
+        top: 25px;
+        left: 5px;
+        font-size: 10px;
+    }
+
+    .wd p {
+        line-height: 16px
+    }
+}

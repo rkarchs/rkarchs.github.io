@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A site SoleyFocused on the weather to make sure you are ready for the day. This Page focuses on images depicting the weather.">
+    <title>Gallery - SoleyWeather</title>
+     <link rel="icon" href="./images/sunnycloud.png">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville:700" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+    <header class="wrapperhead"><a href="index.html">
+            <img src="images/sunnycloud.png" alt="logo" class="img1"></a>
+        <div class="ht">
+            <h1>SoleyWeather</h1>
+            <div class="sh">
+                <h2>A Weather site that is on your side.</h2>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <button class="hamburger" onclick="toggleHam()"><img src="images/Hamburger_icon.png" alt="hamburger icon"></button>
+        <ul class="main-nav" id="mainMenu">
+            <li><a href="index.html" class="link">Home</a></li>
+            <li><a href="preston.html" class="link">Preston</a></li>
+            <li><a href="sodasprings.html" class="link">Soda Springs</a></li>
+            <li><a href="fishhaven.html" class="link">Fish Haven</a></li>
+            <li><a href="stormcenter.html" class="link">Storm Center</a></li>
+            <li><a href="gallery.html" class="link">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1 class="townname">SoleyWeather Gallery</h1>
+        <div class="picContainer">
+            <figure>
+                <img class="item" src="images/fall.jpg" alt="picture of fall">
+                <figcaption class="galleryFig">Fall</figcaption>
+            </figure>
+
+            <figure>
+                <img class="item" src="images/spring.jpg" alt="picture of spring">
+                <figcaption class="galleryFig">Spring</figcaption>
+            </figure>
+
+            <figure>
+                <img class="item" src="images/snow.jpg" alt="picture of snow">
+                <figcaption class="galleryFig">Winter</figcaption>
+            </figure>
+            <figure>
+                <img class="item" src="images/thunder.jpg" alt="picture of thunder">
+                <figcaption class="galleryFig">Thunder Storm</figcaption>
+            </figure>
+            <figure>
+                <img class="item" src="images/rain.jpg" alt="picture of rain">
+                <figcaption class="galleryFig">Rainy Days</figcaption>
+            </figure>
+
+            <figure>
+                <img class="item" src="images/cloudy.jpg" alt="picture of clouds">
+                <figcaption class="galleryFig">Cloudly Day</figcaption>
+            </figure>
+
+        </div>
+
+    </main>
+    <footer>
+        <p> &copy; SoleyWeather | Silicon Valley, CA | <span id="currentDate">test</span> </p>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="http://code.jquery.com/jquery-1.5.js"></script>
+    <script src="scripts/wayfinding.js"></script>
+</body>
+
+</html>
