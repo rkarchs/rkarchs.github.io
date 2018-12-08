@@ -193,6 +193,21 @@ button p {
     margin: 0 auto;
 }
 
+.tempGridInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto; 
+}
+
+.tempGridInfo img {
+    max-width: 85%;
+    margin: 0 auto;
+}
+.tempGridInfo h4 {
+    text-align: center
+}
+
 /*
 .container {
     display: flex;
