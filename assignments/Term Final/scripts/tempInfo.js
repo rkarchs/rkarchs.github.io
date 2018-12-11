@@ -5,7 +5,6 @@ weatherRequestW.open('GET', apiURLW, true)
 weatherRequestW.send();
 weatherRequestW.onload = function () {
     var weatherData = JSON.parse(weatherRequestW.responseText);
-    console.log(weatherData);
 
     document.getElementById('currenttempw').innerHTML = weatherData.main.temp.toFixed(1) + "&degF";
 }
@@ -17,7 +16,6 @@ weatherRequestO.open('GET', apiURLO, true)
 weatherRequestO.send();
 weatherRequestO.onload = function () {
     var weatherData = JSON.parse(weatherRequestO.responseText);
-    console.log(weatherData);
 
     document.getElementById('currenttempo').innerHTML = weatherData.main.temp.toFixed(1) + "&degF";
 }
@@ -29,7 +27,6 @@ weatherRequestSD.open('GET', apiURLSD, true)
 weatherRequestSD.send();
 weatherRequestSD.onload = function () {
     var weatherData = JSON.parse(weatherRequestSD.responseText);
-    console.log(weatherData);
 
     document.getElementById('currenttempsd').innerHTML = weatherData.main.temp.toFixed(1) + "&degF";
 }
@@ -41,7 +38,6 @@ weatherRequestM.open('GET', apiURLM, true)
 weatherRequestM.send();
 weatherRequestM.onload = function () {
     var weatherData = JSON.parse(weatherRequestM.responseText);
-    console.log(weatherData);
 
     document.getElementById('currenttempm').innerHTML = weatherData.main.temp.toFixed(1) + "&degF";
 }

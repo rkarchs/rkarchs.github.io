@@ -54,6 +54,22 @@
 */
     }
 
+    .tempGridInfo p,
+    .tempGridInfo h4 {
+        line-height: 10px;
+    }
+
+    .conline {
+        text-align: center
+    }
+
+    .conline p {
+        display: inline-block;
+
+    }
+
+
+
     /*--------------------------------*/
     /* Form   */
     .falign {

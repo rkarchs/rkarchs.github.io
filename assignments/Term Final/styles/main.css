@@ -210,16 +210,9 @@ button p {
     text-align: center
 }
 
-/*
-.container {
-    display: flex;
-    justify-content: center;
+.tempGridInfo p {
+    text-align: center;
 }
-
-.container img {
-    max-width: 70%;
-}
-*/
 
 footer,
 .push {
