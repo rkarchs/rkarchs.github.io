@@ -6,5 +6,5 @@ closures.onload = function () {
     var dates = JSON.parse(closures.responseText);
     console.log(dates);
 
-//    document.getElementById('item1').innerHTML = ;
+    document.getElementById('wdct').innerHTML = dates.Templehours[0].closures;
 };
