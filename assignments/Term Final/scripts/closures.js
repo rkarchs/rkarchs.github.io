@@ -9,7 +9,7 @@ closures.onload = function () {
     document.getElementById('wdct').innerHTML = dates.Templehours["0"].closures;
     document.getElementById('oct').innerHTML = dates.Templehours["1"].closures;
     
-    for(var i = 0; i < 9; i++){
+    for(var i = 0; i < 10; i++){
         var sdt = 'sdt' + i;
         var num =  i;
       
