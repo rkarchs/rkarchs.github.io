@@ -1,8 +1,20 @@
 $(function () {
-     $("#accordion").accordion({
-         collapsible: true,
-         active: false,
-         heightStyle: "content",
-         collapsible: false,
-     });
+    $("#accordion").accordion({
+        active: false,
+        heightStyle: "content",
+        collapsible: false
+    });
+});
+
+$(function () {
+    $("#sdtabs").tabs({
+        collapsible: true,
+        active: false,
+    });
+});
+$(function () {
+    $("#mtabs").tabs({
+        collapsible: true,
+        active: false,
+    });
 });
