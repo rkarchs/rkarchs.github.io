@@ -75,6 +75,10 @@
 
     .lineheight {}
 
+    .lineheightdco > p {
+        line-height: 20px;
+    }
+
     /*--------------------------------*/
     /* Form   */
     .falign {

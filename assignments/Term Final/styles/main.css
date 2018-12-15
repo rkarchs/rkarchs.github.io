@@ -218,6 +218,10 @@ button p {
     line-height: 20px;
 }
 
+h5 {
+    text-align: center;
+}
+
 /*
 .test {
     border-bottom: 1px solid black;
