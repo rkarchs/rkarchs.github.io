@@ -58,8 +58,6 @@ header {
 
 .bookaroom p {
     padding: 10px;
-
-
 }
 
 .bookaroom button:hover {
@@ -189,7 +187,9 @@ button p {
 .cumcon,
 #reserveForm,
 #accordion,
-.indexcontactinfo {
+.indexcontactinfo,
+.services,
+.sb {
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -220,6 +220,32 @@ button p {
 
 h5 {
     text-align: center;
+}
+
+.services {}
+
+.sb {
+    border: 1px solid #fccde2;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.smish img {
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+.smish figcaption,
+.smishbio {
+    text-align: center;
+}
+
+
+
+.smishcon > div > p {
+    font-size: 15px;
 }
 
 /*
