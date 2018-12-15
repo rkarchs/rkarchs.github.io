@@ -214,6 +214,10 @@ button p {
     text-align: center;
 }
 
+.lineheight {
+    line-height: 20px;
+}
+
 /*
 .test {
     border-bottom: 1px solid black;
