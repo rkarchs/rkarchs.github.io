@@ -214,9 +214,11 @@ button p {
     text-align: center;
 }
 
-.endowtable {
-   
+/*
+.test {
+    border-bottom: 1px solid black;
 }
+*/
 
 footer,
 .push {
@@ -358,6 +360,15 @@ footer p {
         font-size: 11px
     }
 }
+
+/*-------------------------------------------------*/
+.ui-tabs .ui-tabs-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ui-tabs .ui-tabs-nav li {}
 
 /*-------------------------------------------------*/
 /*for form on reservation page*/
