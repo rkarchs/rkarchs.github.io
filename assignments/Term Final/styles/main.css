@@ -248,6 +248,9 @@ h5 {
     font-size: 15px;
 }
 
+.commentsnote h5 {
+    text-align: left;
+}
 /*
 .test {
     border-bottom: 1px solid black;
