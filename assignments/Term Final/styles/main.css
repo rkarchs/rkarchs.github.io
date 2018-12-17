@@ -256,11 +256,16 @@ h5 {
     text-align: center;
     margin-bottom: 20px;
 }
+
 /*
 .test {
     border-bottom: 1px solid black;
 }
 */
+.confirmpage {
+    border: 1px solid #fccde2;
+    border-radius: 20px;
+}
 
 footer,
 .push {
