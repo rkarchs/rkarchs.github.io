@@ -35,8 +35,8 @@
         </nav>
     </header>
     <main class="content">
-        
-         <table class="amen">
+
+        <table class="amen">
             <thead>
                 <tr>
                     <th colspan="">
@@ -49,7 +49,7 @@
                     <td>
                         &#8226;Breakfast
                     </td>
-                     <td>
+                    <td>
                         &#8226;Parking
                     </td>
                     <td>
@@ -69,8 +69,8 @@
         </table>
 
 
-        <form method="get" action="" id="reserveForm">
-            <h2 class="bookCon">Booking & contact</h2>
+        <form method="get" action="confirmation.html" id="reserveForm">
+            <h2 class="bookCon">Contact Information</h2>
             <!--            <div class="falign">-->
             <div>
                 <input type="text" class="fname" name="firstName" pattern="[A-Za-z ] {3, }" placeholder="First Name" required>
@@ -80,13 +80,17 @@
                 <input type="text" class="lname" name="lastName" pattern="[A-Za-z ] {3, }" placeholder="Last Name" required>
             </div>
 
-            <div class="falign1">
+            <div class="falign3">
                 <div>
                     <input type="text" id="street" class="street" name="street" placeholder="Street">
                 </div>
 
                 <div>
                     <input type="text" id="city" class="city" name="city" placeholder="City">
+                </div>
+                
+                 <div>
+                    <input type="text" id="state" class="state" name="state" pattern="[A-Za-z ] {2, }" placeholder="State">
                 </div>
             </div>
 
@@ -100,8 +104,19 @@
             </div>
 
 
-            <h2 class="dee">Details</h2>
-            <div class="falign">
+            <h2 class="dee">Booking Details</h2>
+            <div class="falign2">
+                <div>
+                    <label for="Location">Location</label>
+                    <select for="location" form="reserveForm">
+                        <option value="blank"></option>
+                        <option value="washingtondc">Washington D.C</option>
+                        <option value="baltimoreMD">Batimore, Maryland</option>
+                        <option value="sandiegoCA">San Diego, California</option>
+                        <option value="oaklandCA">Oakland, California</option>
+                        <option value="manhattanNY">Manhattan, New York</option>
+                    </select>
+                </div>
                 <div class="">
                     <label for="arrive" class="label-date">Check-in</label>
                     <input type="date" id="arrive" class="arrive" name="arrive">
@@ -144,11 +159,12 @@
             <br>
             <button class="subBtn" type="submit" value="Submit">Book Reservation</button>
         </form>
-        
+
         <div class="push"></div>
     </main>
-    <footer>
-        <p> &copy; Temple Inn & Suites <span id="currentTimeAndDate"></span></p>
+     <footer>
+        <hr>
+        <p> &copy; Temple Inn & Suites | <span id="currentTimeAndDate"></span></p>
     </footer>
     <script src="scripts/currenttimeanddate.js"></script>
     <script src="scripts/hamburgermenu.js"></script>

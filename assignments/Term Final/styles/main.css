@@ -251,6 +251,11 @@ h5 {
 .commentsnote h5 {
     text-align: left;
 }
+
+.activ {
+    text-align: center;
+    margin-bottom: 20px;
+}
 /*
 .test {
     border-bottom: 1px solid black;
@@ -269,6 +274,12 @@ footer {
 
 footer p {
     padding-bottom: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    border-bottom: .5px solid black;
 }
 
 /*----------------------------------------------------*/
@@ -420,7 +431,8 @@ footer p {
 input[type="text"],
 input[type="email"],
 input[type="tel"],
-input[type="date"] {
+input[type="date"],
+select {
     padding: 12px;
     font-size: 14px;
     width: 100%;
