@@ -108,8 +108,8 @@
             <div class="falign2">
                 <div>
                     <label for="Location">Location</label>
-                    <select for="location" form="reserveForm">
-                        <option value="blank"></option>
+                    <select for="location" form="reserveForm" required>
+                        <option value="" disabled selected> Select location</option>
                         <option value="washingtondc">Washington D.C</option>
                         <option value="baltimoreMD">Batimore, Maryland</option>
                         <option value="sandiegoCA">San Diego, California</option>
@@ -119,11 +119,11 @@
                 </div>
                 <div class="">
                     <label for="arrive" class="label-date">Check-in</label>
-                    <input type="date" id="arrive" class="arrive" name="arrive">
+                    <input type="date" id="arrive" class="arrive" name="arrive" required>
                 </div>
                 <div class="">
                     <label for="depart" class="label-date">Check-out</label>
-                    <input type="date" id="depart" class="depart" name="depart">
+                    <input type="date" id="depart" class="depart" name="depart" required>
                 </div>
             </div>
 
