@@ -9,5 +9,4 @@ $(function(){
                 $(this).addClass('active');
             }
         });
-
 });

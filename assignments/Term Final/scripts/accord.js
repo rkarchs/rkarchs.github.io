@@ -12,6 +12,7 @@ $(function () {
         active: false,
     });
 });
+
 $(function () {
     $("#mtabs").tabs({
         collapsible: true,
