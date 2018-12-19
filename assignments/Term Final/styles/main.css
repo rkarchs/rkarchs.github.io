@@ -21,6 +21,11 @@ body {
     padding-bottom: 10px;
 }
 
+.headTitle a {
+    text-decoration: none;
+    color: black;
+}
+
 .headCaption {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -203,7 +208,8 @@ button p {
     margin: 0 auto;
 }
 
-.tempGridInfo img, .lineheightdco {
+.tempGridInfo img,
+.lineheightdco {
     max-width: 85%;
     margin: 0 auto;
 }
@@ -256,7 +262,7 @@ h5 {
 
 .activ {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 /*
